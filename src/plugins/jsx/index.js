@@ -416,6 +416,10 @@ export default function(instance) {
     return function(code) {
       let context = this.curContext();
 
+      if (this.state.inPropertyName) {
+        return inner.call(this, code);
+      }
+
       if (context === tc.j_expr) {
         return this.jsxReadToken();
       }

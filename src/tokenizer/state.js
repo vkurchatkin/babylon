@@ -16,6 +16,7 @@ export default class State {
       this.inFunction =
       this.inGenerator =
       this.inAsync =
+      this.inPropertyName =
       this.inType =
       this.noAnonFunctionType =
         false;
