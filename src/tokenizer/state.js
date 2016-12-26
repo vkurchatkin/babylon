@@ -70,6 +70,7 @@ export default class State {
   inMethod: boolean;
   inAsync: boolean;
   inType: boolean;
+  inPropertyName: boolean;
 
   // Labels in scope.
   labels: Array<Object>;
